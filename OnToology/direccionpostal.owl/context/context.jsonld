@@ -1,0 +1,126 @@
+{
+  "@context" : {
+    "thoroughfare" : {
+      "@id" : "http://www.w3.org/ns/locn#thoroughfare"
+    },
+    "Address" : {
+      "@id" : "http://www.w3.org/2006/vcard/ns#Address"
+    },
+    "addressId" : {
+      "@id" : "http://www.w3.org/ns/locn#addressId"
+    },
+    "DireccionPostal" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccionPostal#DireccionPostal"
+    },
+    "license" : {
+      "@id" : "http://creativecommons.org/ns#license"
+    },
+    "issued" : {
+      "@id" : "http://purl.org/dc/terms/issued"
+    },
+    "postName" : {
+      "@id" : "http://www.w3.org/ns/locn#postName"
+    },
+    "poBox" : {
+      "@id" : "http://www.w3.org/ns/locn#poBox"
+    },
+    "locatorDesignator" : {
+      "@id" : "http://www.w3.org/ns/locn#locatorDesignator"
+    },
+    "addressRegion" : {
+      "@id" : "http://schema.org/addressRegion",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasAddress" : {
+      "@id" : "http://www.w3.org/2006/vcard/ns#hasAddress",
+      "@type" : "@id"
+    },
+    "locatorName" : {
+      "@id" : "http://www.w3.org/ns/locn#locatorName"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "adminUnitL1" : {
+      "@id" : "http://www.w3.org/ns/locn#adminUnitL1"
+    },
+    "postal-code" : {
+      "@id" : "http://www.w3.org/2006/vcard/ns#postal-code",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/elements/1.1/creator"
+    },
+    "postalCode" : {
+      "@id" : "http://schema.org/postalCode",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "address" : {
+      "@id" : "http://schema.org/address",
+      "@type" : "@id"
+    },
+    "rights" : {
+      "@id" : "http://purl.org/dc/elements/1.1/rights"
+    },
+    "PostalAddress" : {
+      "@id" : "http://schema.org/PostalAddress"
+    },
+    "region" : {
+      "@id" : "http://www.w3.org/2006/vcard/ns#region",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "identifier" : {
+      "@id" : "http://purl.org/dc/elements/1.1/identifier"
+    },
+    "addressArea" : {
+      "@id" : "http://www.w3.org/ns/locn#addressArea"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    },
+    "locality" : {
+      "@id" : "http://www.w3.org/2006/vcard/ns#locality",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "streetAddress" : {
+      "@id" : "http://schema.org/streetAddress",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/elements/1.1/title"
+    },
+    "fullAddress" : {
+      "@id" : "http://www.w3.org/ns/locn#fullAddress"
+    },
+    "postCode" : {
+      "@id" : "http://www.w3.org/ns/locn#postCode"
+    },
+    "addressLocality" : {
+      "@id" : "http://schema.org/addressLocality",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "street-address" : {
+      "@id" : "http://www.w3.org/2006/vcard/ns#street-address",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "country-name" : {
+      "@id" : "http://www.w3.org/2006/vcard/ns#country-name",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasFormat" : {
+      "@id" : "http://purl.org/dc/terms/hasFormat"
+    },
+    "addressCountry" : {
+      "@id" : "http://schema.org/addressCountry"
+    },
+    "preferredNamespaceUri" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri"
+    },
+    "adminUnitL2" : {
+      "@id" : "http://www.w3.org/ns/locn#adminUnitL2"
+    }
+  }
+}
