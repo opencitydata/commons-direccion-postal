@@ -1,0 +1,244 @@
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccionPostal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccionPostal> <http://www.w3.org/2002/07/owl#versionIRI> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccionPostal_v0.2> .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccionPostal> <http://creativecommons.org/ns#license> <http://creativecommons.org/licenses/by/4.0/> .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccionPostal> <http://purl.org/dc/elements/1.1/creator> "Oscar Corcho (Ontology Engineering Group, Universidad Politécnica de Madrid)" .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccionPostal> <http://purl.org/dc/elements/1.1/identifier> "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccionPostal" .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccionPostal> <http://purl.org/dc/elements/1.1/rights> "Creative Commons Attribution 4.0 International (CC BY 4.0)" .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccionPostal> <http://purl.org/dc/elements/1.1/title> "Vocabulario para la representación de datos de una dirección postal en España"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccionPostal> <http://purl.org/dc/terms/hasFormat> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccionPostal.html> .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccionPostal> <http://purl.org/dc/terms/hasFormat> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccionPostal.owl> .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccionPostal> <http://purl.org/dc/terms/issued> "2014-04-28" .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccionPostal> <http://purl.org/vocab/vann/preferredNamespaceUri> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccionPostal#> .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccionPostal> <http://www.w3.org/2000/01/rdf-schema#comment> "Este vocabulario se utiliza para la descripción de una dirección postal. Reutiliza términos de varios vocabularios que actualmente se utilizan para propósitos similares, incluyendo:\n- Core Location Vocabulary, schema.org y vCard, que definen la clase Address\n- WGS84 y GeoSPARQL para la representación de las coordenadas geográficas.\n- División Administrativa Española y Callejero\nAsimismo, se actualizará de acuerdo con la evolución de estos vocabularios (especialmente los que están en pleno desarrollo en el momento de creación de este vocabulario, como vCard) y se tendrá en cuenta en el futuro el trabajo que se desarrolle en el grupo del W3C denominado Location And Addresses Community Group (http://www.w3.org/community/locadd/).\nEste vocabulario aún se encuentra en una situación inestable.\t\t"@es .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#comment
+<http://www.w3.org/2000/01/rdf-schema#comment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#isDefinedBy
+<http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#label
+<http://www.w3.org/2000/01/rdf-schema#label> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://schema.org/address
+<http://schema.org/address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://schema.org/address> <http://www.w3.org/2000/01/rdf-schema#range> <http://schema.org/PostalAddress> .
+<http://schema.org/address> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org/> .
+<http://schema.org/address> <http://www.w3.org/2000/01/rdf-schema#label> "address"@en .
+<http://schema.org/address> <http://www.w3.org/2000/01/rdf-schema#label> "dirección"@es .
+# 
+# http://www.w3.org/2006/vcard/ns#hasAddress
+<http://www.w3.org/2006/vcard/ns#hasAddress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/2006/vcard/ns#hasAddress> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2006/vcard/ns#Address> .
+<http://www.w3.org/2006/vcard/ns#hasAddress> <http://www.w3.org/2000/01/rdf-schema#comment> "To specify the components of the delivery address for the object"@en .
+<http://www.w3.org/2006/vcard/ns#hasAddress> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/TR/vcard-rdf/> .
+<http://www.w3.org/2006/vcard/ns#hasAddress> <http://www.w3.org/2000/01/rdf-schema#label> "dirección"@es .
+<http://www.w3.org/2006/vcard/ns#hasAddress> <http://www.w3.org/2000/01/rdf-schema#label> "has address"@en .
+# 
+# http://www.w3.org/ns/locn#address
+<http://www.w3.org/ns/locn#address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/locn#address> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/locn#Address> .
+<http://www.w3.org/ns/locn#address> <http://www.w3.org/2000/01/rdf-schema#comment> "The locn:address property relationship associates any resource with the locn:Address class"@en .
+<http://www.w3.org/ns/locn#address> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/locn> .
+<http://www.w3.org/ns/locn#address> <http://www.w3.org/2000/01/rdf-schema#label> "address"@en .
+<http://www.w3.org/ns/locn#address> <http://www.w3.org/2000/01/rdf-schema#label> "dirección"@es .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://schema.org/addressCountry
+<http://schema.org/addressCountry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/addressCountry> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/PostalAddress> .
+# 
+# http://schema.org/addressLocality
+<http://schema.org/addressLocality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/addressLocality> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/PostalAddress> .
+<http://schema.org/addressLocality> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://schema.org/addressLocality> <http://www.w3.org/2000/01/rdf-schema#comment> "La localidad. Por ejemplo, Zaragoza"@es .
+<http://schema.org/addressLocality> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org/> .
+<http://schema.org/addressLocality> <http://www.w3.org/2000/01/rdf-schema#label> "localidad"@es .
+# 
+# http://schema.org/addressRegion
+<http://schema.org/addressRegion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/addressRegion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/PostalAddress> .
+<http://schema.org/addressRegion> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://schema.org/addressRegion> <http://www.w3.org/2000/01/rdf-schema#comment> "La región. Por ejemplo, Provincia de Zaragoza o Comunidad Autónoma de Aragón"@es .
+<http://schema.org/addressRegion> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org/> .
+<http://schema.org/addressRegion> <http://www.w3.org/2000/01/rdf-schema#label> "región"@es .
+# 
+# http://schema.org/postalCode
+<http://schema.org/postalCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/postalCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/PostalAddress> .
+<http://schema.org/postalCode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://schema.org/postalCode> <http://www.w3.org/2000/01/rdf-schema#comment> "El código postal. Por ejemplo, 50071"@es .
+<http://schema.org/postalCode> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org/> .
+<http://schema.org/postalCode> <http://www.w3.org/2000/01/rdf-schema#label> "código postal"@es .
+# 
+# http://schema.org/streetAddress
+<http://schema.org/streetAddress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/streetAddress> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/PostalAddress> .
+<http://schema.org/streetAddress> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://schema.org/streetAddress> <http://www.w3.org/2000/01/rdf-schema#comment> "La dirección de la calle. Por ejemplo, Vía Hispanidad, 20"@es .
+<http://schema.org/streetAddress> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org/> .
+<http://schema.org/streetAddress> <http://www.w3.org/2000/01/rdf-schema#label> "dirección"@es .
+# 
+# http://www.w3.org/2006/vcard/ns#country-name
+<http://www.w3.org/2006/vcard/ns#country-name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/2006/vcard/ns#country-name> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.w3.org/2006/vcard/ns#country-name> <http://www.w3.org/2000/01/rdf-schema#comment> "El nombre del país asociado con la dirección del objeto"@es .
+<http://www.w3.org/2006/vcard/ns#country-name> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2006/vcard/ns> .
+<http://www.w3.org/2006/vcard/ns#country-name> <http://www.w3.org/2000/01/rdf-schema#label> "país"@es .
+# 
+# http://www.w3.org/2006/vcard/ns#locality
+<http://www.w3.org/2006/vcard/ns#locality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/2006/vcard/ns#locality> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.w3.org/2006/vcard/ns#locality> <http://www.w3.org/2000/01/rdf-schema#comment> "La localidad (por ejemplo, municipio) asociada con la dirección del objeto"@es .
+<http://www.w3.org/2006/vcard/ns#locality> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2006/vcard/ns> .
+<http://www.w3.org/2006/vcard/ns#locality> <http://www.w3.org/2000/01/rdf-schema#label> "localidad"@es .
+# 
+# http://www.w3.org/2006/vcard/ns#postal-code
+<http://www.w3.org/2006/vcard/ns#postal-code> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/2006/vcard/ns#postal-code> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.w3.org/2006/vcard/ns#postal-code> <http://www.w3.org/2000/01/rdf-schema#comment> "El código postal asociado con la dirección del objeto"@es .
+<http://www.w3.org/2006/vcard/ns#postal-code> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2006/vcard/ns> .
+<http://www.w3.org/2006/vcard/ns#postal-code> <http://www.w3.org/2000/01/rdf-schema#label> "código postal"@es .
+# 
+# http://www.w3.org/2006/vcard/ns#region
+<http://www.w3.org/2006/vcard/ns#region> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/2006/vcard/ns#region> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.w3.org/2006/vcard/ns#region> <http://www.w3.org/2000/01/rdf-schema#comment> "La región (estado, provincia, comunidad autónoma) asociada con la dirección del objeto"@es .
+<http://www.w3.org/2006/vcard/ns#region> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2006/vcard/ns> .
+<http://www.w3.org/2006/vcard/ns#region> <http://www.w3.org/2000/01/rdf-schema#label> "región"@es .
+# 
+# http://www.w3.org/2006/vcard/ns#street-address
+<http://www.w3.org/2006/vcard/ns#street-address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/2006/vcard/ns#street-address> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.w3.org/2006/vcard/ns#street-address> <http://www.w3.org/2000/01/rdf-schema#comment> "La dirección de la calle o vía asociada con la dirección del objeto"@es .
+<http://www.w3.org/2006/vcard/ns#street-address> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2006/vcard/ns> .
+<http://www.w3.org/2006/vcard/ns#street-address> <http://www.w3.org/2000/01/rdf-schema#label> "nombre de la vía"@es .
+# 
+# http://www.w3.org/ns/locn#addressArea
+<http://www.w3.org/ns/locn#addressArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/ns/locn#addressArea> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/locn#Address> .
+<http://www.w3.org/ns/locn#addressArea> <http://www.w3.org/2000/01/rdf-schema#comment> "The name or names of a geographic area or locality that groups a number of addressable objects for addressing purposes, without being an administrative unit. This would typically be part of a city, a neighbourhood or village"@en .
+<http://www.w3.org/ns/locn#addressArea> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/locn> .
+# 
+# http://www.w3.org/ns/locn#addressId
+<http://www.w3.org/ns/locn#addressId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/ns/locn#addressId> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/locn#Address> .
+<http://www.w3.org/ns/locn#addressId> <http://www.w3.org/2000/01/rdf-schema#comment> "The concept of adding a globally unique identifier for each instance of an address is a crucial part of the INSPIRE data spec. "@en .
+<http://www.w3.org/ns/locn#addressId> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/locn> .
+# 
+# http://www.w3.org/ns/locn#adminUnitL1
+<http://www.w3.org/ns/locn#adminUnitL1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/ns/locn#adminUnitL1> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/locn#Address> .
+<http://www.w3.org/ns/locn#adminUnitL1> <http://www.w3.org/2000/01/rdf-schema#comment> "The uppermost administrative unit for the address, almost always a country. The domain of locn:adminUnitL1 is locn:Address and the range is a literal, conceptually defined by the INSPIRE Geographical Name data type - https://inspire-twg.jrc.ec.europa.eu/inspire-fc.html#_C2612. \nBest practice is to use the ISO 3166-1 code but if this is inappropriate for the context, country names should be provided in a consistent manner to reduce ambiguity. For example, either write 'United Kingdom' or 'UK' consistently throughout the data set and avoid mixing the two."@en .
+<http://www.w3.org/ns/locn#adminUnitL1> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/locn> .
+# 
+# http://www.w3.org/ns/locn#adminUnitL2
+<http://www.w3.org/ns/locn#adminUnitL2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/ns/locn#adminUnitL2> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/locn#Address> .
+<http://www.w3.org/ns/locn#adminUnitL2> <http://www.w3.org/2000/01/rdf-schema#comment> "The region of the address, usually a county, state or other such area that typically encompasses several localities. The range is a literal, conceptually defined by the INSPIRE Geographical Name data type - https://inspire-twg.jrc.ec.europa.eu/inspire-fc.html#_C2612-."@en .
+<http://www.w3.org/ns/locn#adminUnitL2> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/locn> .
+# 
+# http://www.w3.org/ns/locn#fullAddress
+<http://www.w3.org/ns/locn#fullAddress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/ns/locn#fullAddress> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/locn#Address> .
+<http://www.w3.org/ns/locn#fullAddress> <http://www.w3.org/2000/01/rdf-schema#comment> "The complete address written as a string, with or without formatting"@en .
+<http://www.w3.org/ns/locn#fullAddress> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/locn> .
+# 
+# http://www.w3.org/ns/locn#locatorDesignator
+<http://www.w3.org/ns/locn#locatorDesignator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/ns/locn#locatorDesignator> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/locn#Address> .
+<http://www.w3.org/ns/locn#locatorDesignator> <http://www.w3.org/2000/01/rdf-schema#comment> "A number or a sequence of characters that uniquely identifies the locator within the relevant scope(s). The full identification of the locator could include one or more locator designators. "@en .
+<http://www.w3.org/ns/locn#locatorDesignator> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/locn> .
+# 
+# http://www.w3.org/ns/locn#locatorName
+<http://www.w3.org/ns/locn#locatorName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/ns/locn#locatorName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/locn#Address> .
+<http://www.w3.org/ns/locn#locatorName> <http://www.w3.org/2000/01/rdf-schema#comment> "Proper noun(s) applied to the real world entity identified by the locator. The locator name could be the name of the property or complex, of the building or part of the building, or it could be the name of a room inside a building. "@en .
+<http://www.w3.org/ns/locn#locatorName> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/locn> .
+# 
+# http://www.w3.org/ns/locn#poBox
+<http://www.w3.org/ns/locn#poBox> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/ns/locn#poBox> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/locn#Address> .
+<http://www.w3.org/ns/locn#poBox> <http://www.w3.org/2000/01/rdf-schema#comment> "The Post Office Box number"@en .
+<http://www.w3.org/ns/locn#poBox> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/locn> .
+# 
+# http://www.w3.org/ns/locn#postCode
+<http://www.w3.org/ns/locn#postCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/ns/locn#postCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/locn#Address> .
+<http://www.w3.org/ns/locn#postCode> <http://www.w3.org/2000/01/rdf-schema#comment> "The post code (a.k.a postal code, zip code etc.). Post codes are common elements in many countries' postal address systems."@en .
+<http://www.w3.org/ns/locn#postCode> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/locn> .
+# 
+# http://www.w3.org/ns/locn#postName
+<http://www.w3.org/ns/locn#postName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/ns/locn#postName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/locn#Address> .
+<http://www.w3.org/ns/locn#postName> <http://www.w3.org/2000/01/rdf-schema#comment> "The key postal division of the address, usually the city. (INSPIRE's definition is \"One or more names created and maintained for postal purposes to identify a subdivision of addresses and postal delivery points.\")"@en .
+<http://www.w3.org/ns/locn#postName> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/locn> .
+# 
+# http://www.w3.org/ns/locn#thoroughfare
+<http://www.w3.org/ns/locn#thoroughfare> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/ns/locn#thoroughfare> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/locn#Address> .
+<http://www.w3.org/ns/locn#thoroughfare> <http://www.w3.org/2000/01/rdf-schema#comment> "An address component that represents the name of a passage or way through from one location to another. A thoroughfare is not necessarily a road, it might be a waterway or some other feature"@en .
+<http://www.w3.org/ns/locn#thoroughfare> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/locn> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://schema.org/PostalAddress
+<http://schema.org/PostalAddress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccionPostal#DireccionPostal
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccionPostal#DireccionPostal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccionPostal#DireccionPostal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/PostalAddress> .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccionPostal#DireccionPostal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2006/vcard/ns#Address> .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccionPostal#DireccionPostal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/locn#Address> .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccionPostal#DireccionPostal> <http://purl.org/dc/terms/issued> "2014-03-28" .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccionPostal#DireccionPostal> <http://www.w3.org/2000/01/rdf-schema#comment> "Una dirección postal en España. Se define como una especialización de las clases vcard:Address, schema:PostalAddress y locn:Address\nAdemás de las propiedades asociadas a estas clases, y definidas en su correspondiente vocabulario, también se pueden utilizar las definidas en los vocabularios de división administrativa española y en el callejero"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccionPostal#DireccionPostal> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccionPostal> .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccionPostal#DireccionPostal> <http://www.w3.org/2000/01/rdf-schema#label> "Dirección postal"@es .
+# 
+# http://www.w3.org/2006/vcard/ns#Address
+<http://www.w3.org/2006/vcard/ns#Address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/ns/locn#Address
+<http://www.w3.org/ns/locn#Address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/locn#Address> <http://www.w3.org/2000/01/rdf-schema#comment> "An \"address representation\" as defined in the INSPIRE Data Specification on Addresses, v3.0.1. The locn:addressId property may be used to link this locn:Address to other representations."@en .
+<http://www.w3.org/ns/locn#Address> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/locn> .
+# 
+_:genid1 <http://www.w3.org/2000/01/rdf-schema#label> "RDF" .
+_:genid2 <http://www.w3.org/2000/01/rdf-schema#label> "HTML" .
+# Generated by the OWL API (version 5.1.7) https://github.com/owlcs/owlapi/

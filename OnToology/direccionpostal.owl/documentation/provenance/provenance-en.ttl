@@ -1,0 +1,9 @@
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccionPostal_v0.2> a prov:Entity;
+	 dc:title "Vocabulario para la representación de datos de una dirección postal en España";
+	 prov:wasAttributedTo :agent0;
+	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
+.
+:agent0 a prov:Agent; foaf:name "Oscar Corcho (Ontology Engineering Group, Universidad Politécnica de Madrid)".

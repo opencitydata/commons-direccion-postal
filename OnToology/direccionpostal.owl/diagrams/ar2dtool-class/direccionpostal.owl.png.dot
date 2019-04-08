@@ -1,0 +1,35 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "locn:Address" "vcard:Address" "schema:PostalAddress" ; /*classes style*/
+	"http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccionPostal" -> "esdir:" [ label = "vann:preferredNamespaceUri" ];
+	"http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccionPostal" -> "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccionPostal.owl" [ label = "dcterms:hasFormat" ];
+	"http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccionPostal" -> "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccionPostal_v0.2" [ label = "owl:versionIRI" ];
+	"http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccionPostal" -> "http://creativecommons.org/licenses/by/4.0/" [ label = "cc:license" ];
+	"http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccionPostal" -> "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccionPostal.html" [ label = "dcterms:hasFormat" ];
+	"locn:Address" -> "owl:Thing" [ label = "locn:locatorName" ];
+	"locn:Address" -> "owl:Thing" [ label = "locn:thoroughfare" ];
+	"locn:Address" -> "owl:Thing" [ label = "locn:postCode" ];
+	"schema:PostalAddress" -> "xsd:string" [ label = "schema:addressRegion" ];
+	"owl:Thing" -> "vcard:Address" [ label = "vcard:hasAddress" ];
+	"locn:Address" -> "owl:Thing" [ label = "locn:postName" ];
+	"schema:PostalAddress" -> "xsd:string" [ label = "schema:postalCode" ];
+	"owl:Thing" -> "xsd:string" [ label = "vcard:postal-code" ];
+	"owl:Thing" -> "xsd:string" [ label = "vcard:country-name" ];
+	"locn:Address" -> "owl:Thing" [ label = "locn:poBox" ];
+	"locn:Address" -> "owl:Thing" [ label = "locn:locatorDesignator" ];
+	"schema:PostalAddress" -> "xsd:string" [ label = "schema:addressLocality" ];
+	"locn:Address" -> "owl:Thing" [ label = "locn:adminUnitL1" ];
+	"locn:Address" -> "owl:Thing" [ label = "locn:addressId" ];
+	"owl:Thing" -> "xsd:string" [ label = "vcard:street-address" ];
+	"locn:Address" -> "owl:Thing" [ label = "locn:adminUnitL2" ];
+	"owl:Thing" -> "schema:PostalAddress" [ label = "schema:address" ];
+	"schema:PostalAddress" -> "owl:Thing" [ label = "schema:addressCountry" ];
+	"owl:Thing" -> "locn:Address" [ label = "locn:address" ];
+	"owl:Thing" -> "xsd:string" [ label = "vcard:locality" ];
+	"locn:Address" -> "owl:Thing" [ label = "locn:fullAddress" ];
+	"owl:Thing" -> "xsd:string" [ label = "vcard:region" ];
+	"locn:Address" -> "owl:Thing" [ label = "locn:addressArea" ];
+	"schema:PostalAddress" -> "xsd:string" [ label = "schema:streetAddress" ];
+
+}
