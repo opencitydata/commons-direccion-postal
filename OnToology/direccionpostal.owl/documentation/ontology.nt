@@ -1,15 +1,14 @@
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccionPostal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccionPostal> <http://www.w3.org/2002/07/owl#versionIRI> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccionPostal_v0.2> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccionPostal> <http://creativecommons.org/ns#license> <http://creativecommons.org/licenses/by/4.0/> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccionPostal> <http://purl.org/dc/elements/1.1/creator> "Oscar Corcho (Ontology Engineering Group, Universidad Politécnica de Madrid)" .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccionPostal> <http://purl.org/dc/elements/1.1/identifier> "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccionPostal" .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccionPostal> <http://purl.org/dc/elements/1.1/rights> "Creative Commons Attribution 4.0 International (CC BY 4.0)" .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccionPostal> <http://purl.org/dc/elements/1.1/title> "Vocabulario para la representación de datos de una dirección postal en España"@es .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccionPostal> <http://purl.org/dc/terms/hasFormat> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccionPostal.html> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccionPostal> <http://purl.org/dc/terms/hasFormat> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccionPostal.owl> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccionPostal> <http://purl.org/dc/terms/issued> "2014-04-28" .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccionPostal> <http://purl.org/vocab/vann/preferredNamespaceUri> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccionPostal#> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccionPostal> <http://www.w3.org/2000/01/rdf-schema#comment> "Este vocabulario se utiliza para la descripción de una dirección postal. Reutiliza términos de varios vocabularios que actualmente se utilizan para propósitos similares, incluyendo:\n- Core Location Vocabulary, schema.org y vCard, que definen la clase Address\n- WGS84 y GeoSPARQL para la representación de las coordenadas geográficas.\n- División Administrativa Española y Callejero\nAsimismo, se actualizará de acuerdo con la evolución de estos vocabularios (especialmente los que están en pleno desarrollo en el momento de creación de este vocabulario, como vCard) y se tendrá en cuenta en el futuro el trabajo que se desarrolle en el grupo del W3C denominado Location And Addresses Community Group (http://www.w3.org/community/locadd/).\nEste vocabulario aún se encuentra en una situación inestable.\t\t"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal> <http://www.w3.org/2002/07/owl#versionIRI> <http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal/0.3.1> .
+<http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal> <http://creativecommons.org/ns#license> <http://creativecommons.org/licenses/by/4.0/> .
+<http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal> <http://purl.org/dc/elements/1.1/creator> "Oscar Corcho (Ontology Engineering Group, Universidad Politécnica de Madrid)" .
+<http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal> <http://purl.org/dc/elements/1.1/identifier> "http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal" .
+<http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal> <http://purl.org/dc/elements/1.1/rights> "Creative Commons Attribution 4.0 International (CC BY 4.0)" .
+<http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal> <http://purl.org/dc/elements/1.1/title> "Vocabulario para la representación de datos de una dirección postal en España"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal> <http://purl.org/dc/terms/hasFormat> <http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal.owl> .
+<http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal> <http://purl.org/dc/terms/issued> "2014-04-28" .
+<http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal> <http://purl.org/vocab/vann/preferredNamespaceUri> <http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#> .
+<http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal> <http://www.w3.org/2000/01/rdf-schema#comment> "Este vocabulario se utiliza para la descripción de una dirección postal. Reutiliza términos de varios vocabularios que actualmente se utilizan para propósitos similares, incluyendo:\n- Core Location Vocabulary, schema.org y vCard, que definen la clase Address. La ontología vCard podría eliminarse en el futuro si deja de utilizarse de manera masiva.\n- WGS84 y GeoSPARQL para la representación de las coordenadas geográficas.\n- División Administrativa Española y Callejero\nAsimismo, se actualizará de acuerdo con la evolución de estos vocabularios y se tendrá en cuenta en el trabajo del grupo del W3C denominado Location And Addresses Community Group (http://www.w3.org/community/locadd/)."@es .
 # 
 # 
 # #################################################################
@@ -19,8 +18,29 @@
 # #################################################################
 # 
 # 
+# http://creativecommons.org/ns#license
+<http://creativecommons.org/ns#license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/identifier
+<http://purl.org/dc/elements/1.1/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/rights
+<http://purl.org/dc/elements/1.1/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/hasFormat
+<http://purl.org/dc/terms/hasFormat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # http://purl.org/dc/terms/issued
 <http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://www.w3.org/2000/01/rdf-schema#comment
 <http://www.w3.org/2000/01/rdf-schema#comment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
@@ -47,11 +67,30 @@
 <http://schema.org/address> <http://www.w3.org/2000/01/rdf-schema#label> "address"@en .
 <http://schema.org/address> <http://www.w3.org/2000/01/rdf-schema#label> "dirección"@es .
 # 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#barrio
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#barrio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#distrito
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#distrito> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#distrito> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#portal
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#portal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#tramo
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#tramo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#via
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#via> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
 # http://www.w3.org/2006/vcard/ns#hasAddress
 <http://www.w3.org/2006/vcard/ns#hasAddress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.w3.org/2006/vcard/ns#hasAddress> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2006/vcard/ns#Address> .
 <http://www.w3.org/2006/vcard/ns#hasAddress> <http://www.w3.org/2000/01/rdf-schema#comment> "To specify the components of the delivery address for the object"@en .
-<http://www.w3.org/2006/vcard/ns#hasAddress> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/TR/vcard-rdf/> .
+<http://www.w3.org/2006/vcard/ns#hasAddress> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2006/vcard/ns> .
 <http://www.w3.org/2006/vcard/ns#hasAddress> <http://www.w3.org/2000/01/rdf-schema#label> "dirección"@es .
 <http://www.w3.org/2006/vcard/ns#hasAddress> <http://www.w3.org/2000/01/rdf-schema#label> "has address"@en .
 # 
@@ -107,6 +146,62 @@
 <http://schema.org/streetAddress> <http://www.w3.org/2000/01/rdf-schema#comment> "La dirección de la calle. Por ejemplo, Vía Hispanidad, 20"@es .
 <http://schema.org/streetAddress> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org/> .
 <http://schema.org/streetAddress> <http://www.w3.org/2000/01/rdf-schema#label> "dirección"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#entrada
+<http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#entrada> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#entrada> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/locn#locatorDesignator> .
+<http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#entrada> <http://purl.org/dc/terms/issued> "2020-01-16" .
+<http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#entrada> <http://www.w3.org/2000/01/rdf-schema#comment> "Un locator designator específico para el caso de direcciones postales españolas, tal y como se describe en el documento D2.8.I.5 INSPIRE Data Specification on Addresses – Guidelines disponible en https://inspire.ec.europa.eu/documents/Data_Specifications/INSPIRE_DataSpecification_AD_v3.0.pdf, tabla B -  Synopsis of Locator Designator types and Postal descriptor used in addressing, páginas 85 y 86"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#entrada> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal> .
+<http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#entrada> <http://www.w3.org/2000/01/rdf-schema#label> "entrada"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#escalera
+<http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#escalera> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#escalera> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/locn#locatorDesignator> .
+<http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#escalera> <http://purl.org/dc/terms/issued> "2020-01-16" .
+<http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#escalera> <http://www.w3.org/2000/01/rdf-schema#comment> "Un locator designator específico para el caso de direcciones postales españolas, tal y como se describe en el documento D2.8.I.5 INSPIRE Data Specification on Addresses – Guidelines disponible en https://inspire.ec.europa.eu/documents/Data_Specifications/INSPIRE_DataSpecification_AD_v3.0.pdf, tabla B -  Synopsis of Locator Designator types and Postal descriptor used in addressing, páginas 85 y 86"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#escalera> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal> .
+<http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#escalera> <http://www.w3.org/2000/01/rdf-schema#label> "escalera"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#hectometro
+<http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#hectometro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#hectometro> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/locn#locatorDesignator> .
+<http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#hectometro> <http://purl.org/dc/terms/issued> "2020-01-23" .
+<http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#hectometro> <http://www.w3.org/2000/01/rdf-schema#comment> "Esta propiedad permite definir el hectómetro en el que se encuentra una dirección postal en caso de que sea relevante representarlo, siendo complementaria a la propiedad que permite representar el punto kilométrico. Es importante destacar que esta propiedad no aparece en el documento D2.8.I.5 INSPIRE Data Specification on Addresses – Guidelines disponible en https://inspire.ec.europa.eu/documents/Data_Specifications/INSPIRE_DataSpecification_AD_v3.0.pdf, tabla B -  Synopsis of Locator Designator types and Postal descriptor used in addressing, páginas 85 y 86, como el resto de propiedades definidas en este vocabulario como subpropiedades de locn:locatorDesignator y locn:locatorName"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#hectometro> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal> .
+<http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#hectometro> <http://www.w3.org/2000/01/rdf-schema#label> "hectómetro"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#nombreDelEdificio
+<http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#nombreDelEdificio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#nombreDelEdificio> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/locn#locatorName> .
+<http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#nombreDelEdificio> <http://purl.org/dc/terms/issued> "2020-01-16" .
+<http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#nombreDelEdificio> <http://www.w3.org/2000/01/rdf-schema#comment> "Un locator name específico para el caso de direcciones postales españolas, tal y como se describe en el documento D2.8.I.5 INSPIRE Data Specification on Addresses – Guidelines disponible en https://inspire.ec.europa.eu/documents/Data_Specifications/INSPIRE_DataSpecification_AD_v3.0.pdf, tabla B -  Synopsis of Locator Designator types and Postal descriptor used in addressing, páginas 85 y 86"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#nombreDelEdificio> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal> .
+<http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#nombreDelEdificio> <http://www.w3.org/2000/01/rdf-schema#label> "nombre del edificio"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#planta
+<http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#planta> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#planta> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/locn#locatorDesignator> .
+<http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#planta> <http://purl.org/dc/terms/issued> "2020-01-16" .
+<http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#planta> <http://www.w3.org/2000/01/rdf-schema#comment> "Un locator designator específico para el caso de direcciones postales españolas, tal y como se describe en el documento D2.8.I.5 INSPIRE Data Specification on Addresses – Guidelines disponible en https://inspire.ec.europa.eu/documents/Data_Specifications/INSPIRE_DataSpecification_AD_v3.0.pdf, tabla B -  Synopsis of Locator Designator types and Postal descriptor used in addressing, páginas 85 y 86"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#planta> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal> .
+<http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#planta> <http://www.w3.org/2000/01/rdf-schema#label> "planta"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#puerta
+<http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#puerta> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#puerta> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/locn#locatorDesignator> .
+<http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#puerta> <http://purl.org/dc/terms/issued> "2020-01-16" .
+<http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#puerta> <http://www.w3.org/2000/01/rdf-schema#comment> "Un locator designator específico para el caso de direcciones postales españolas, tal y como se describe en el documento D2.8.I.5 INSPIRE Data Specification on Addresses – Guidelines disponible en https://inspire.ec.europa.eu/documents/Data_Specifications/INSPIRE_DataSpecification_AD_v3.0.pdf, tabla B -  Synopsis of Locator Designator types and Postal descriptor used in addressing, páginas 85 y 86"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#puerta> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal> .
+<http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#puerta> <http://www.w3.org/2000/01/rdf-schema#label> "puerta"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#puntoKilometrico
+<http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#puntoKilometrico> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#puntoKilometrico> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/locn#locatorDesignator> .
+<http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#puntoKilometrico> <http://purl.org/dc/terms/issued> "2020-01-16" .
+<http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#puntoKilometrico> <http://www.w3.org/2000/01/rdf-schema#comment> "Un locator designator específico para el caso de direcciones postales españolas, tal y como se describe en el documento D2.8.I.5 INSPIRE Data Specification on Addresses – Guidelines disponible en https://inspire.ec.europa.eu/documents/Data_Specifications/INSPIRE_DataSpecification_AD_v3.0.pdf, tabla B -  Synopsis of Locator Designator types and Postal descriptor used in addressing, páginas 85 y 86"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#puntoKilometrico> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal> .
+<http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#puntoKilometrico> <http://www.w3.org/2000/01/rdf-schema#label> "punto kilométrico"@es .
 # 
 # http://www.w3.org/2006/vcard/ns#country-name
 <http://www.w3.org/2006/vcard/ns#country-name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -221,15 +316,57 @@
 # http://schema.org/PostalAddress
 <http://schema.org/PostalAddress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
-# http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccionPostal#DireccionPostal
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccionPostal#DireccionPostal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccionPostal#DireccionPostal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/PostalAddress> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccionPostal#DireccionPostal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2006/vcard/ns#Address> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccionPostal#DireccionPostal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/locn#Address> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccionPostal#DireccionPostal> <http://purl.org/dc/terms/issued> "2014-03-28" .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccionPostal#DireccionPostal> <http://www.w3.org/2000/01/rdf-schema#comment> "Una dirección postal en España. Se define como una especialización de las clases vcard:Address, schema:PostalAddress y locn:Address\nAdemás de las propiedades asociadas a estas clases, y definidas en su correspondiente vocabulario, también se pueden utilizar las definidas en los vocabularios de división administrativa española y en el callejero"@es .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccionPostal#DireccionPostal> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccionPostal> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccionPostal#DireccionPostal> <http://www.w3.org/2000/01/rdf-schema#label> "Dirección postal"@es .
+# http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#DireccionPostal
+<http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#DireccionPostal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#DireccionPostal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/PostalAddress> .
+<http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#DireccionPostal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2006/vcard/ns#Address> .
+<http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#DireccionPostal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/locn#Address> .
+<http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#DireccionPostal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#barrio> .
+_:genid1 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Barrio> .
+<http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#DireccionPostal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#distrito> .
+_:genid2 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito> .
+<http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#DireccionPostal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio> .
+_:genid3 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio> .
+<http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#DireccionPostal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#portal> .
+_:genid4 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Portal> .
+<http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#DireccionPostal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#tramo> .
+_:genid5 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Tramo> .
+<http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#DireccionPostal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#via> .
+_:genid6 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via> .
+<http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#DireccionPostal> <http://purl.org/dc/terms/issued> "2014-03-28" .
+<http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#DireccionPostal> <http://www.w3.org/2000/01/rdf-schema#comment> "Una dirección postal en España. Se define como una especialización de las clases vcard:Address, schema:PostalAddress y locn:Address\nAdemás de las propiedades asociadas a estas clases, y definidas en su correspondiente vocabulario, también se pueden utilizar las definidas en los vocabularios de división administrativa española (por ejemplo, barrio, distrito y municipio) y en el callejero (por ejemplo, via, tramo y portal), para lo cual se han añadido restricciones universales a esta clase, con el objetivo de dejar esta relación más explícita."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#DireccionPostal> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccionPostal> .
+<http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#DireccionPostal> <http://www.w3.org/2000/01/rdf-schema#label> "Dirección postal"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Barrio
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Barrio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Portal
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Portal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Tramo
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Tramo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # http://www.w3.org/2006/vcard/ns#Address
 <http://www.w3.org/2006/vcard/ns#Address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -239,6 +376,6 @@
 <http://www.w3.org/ns/locn#Address> <http://www.w3.org/2000/01/rdf-schema#comment> "An \"address representation\" as defined in the INSPIRE Data Specification on Addresses, v3.0.1. The locn:addressId property may be used to link this locn:Address to other representations."@en .
 <http://www.w3.org/ns/locn#Address> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/locn> .
 # 
-_:genid1 <http://www.w3.org/2000/01/rdf-schema#label> "RDF" .
-_:genid2 <http://www.w3.org/2000/01/rdf-schema#label> "HTML" .
-# Generated by the OWL API (version 5.1.7) https://github.com/owlcs/owlapi/
+_:genid7 <http://www.w3.org/2000/01/rdf-schema#label> "HTML" .
+_:genid8 <http://www.w3.org/2000/01/rdf-schema#label> "RDF" .
+# Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/

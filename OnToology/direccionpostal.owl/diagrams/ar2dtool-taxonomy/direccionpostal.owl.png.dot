@@ -1,9 +1,9 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1000"
-node [shape = rectangle, color="black"]; "locn:Address" "vcard:Address" "esdir:DireccionPostal" "schema:PostalAddress" ; /*classes style*/
+node [shape = rectangle, color="black"]; "esdir:DireccionPostal" "locn:Address" "schema:PostalAddress" "vcard:Address" ; /*classes style*/
 	"esdir:DireccionPostal" -> "locn:Address" [ label = "rdfs:subClassOf" ];
-	"esdir:DireccionPostal" -> "vcard:Address" [ label = "rdfs:subClassOf" ];
 	"esdir:DireccionPostal" -> "schema:PostalAddress" [ label = "rdfs:subClassOf" ];
+	"esdir:DireccionPostal" -> "vcard:Address" [ label = "rdfs:subClassOf" ];
 
 }
