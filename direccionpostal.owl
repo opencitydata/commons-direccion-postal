@@ -25,7 +25,7 @@
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal">
-        <owl:versionIRI rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal/0.3"/>
+        <owl:versionIRI rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal/0.3.1"/>
         <cc:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
         <dcterms:issued>2014-04-28</dcterms:issued>
         <dcterms:hasFormat rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal.html"/>
@@ -254,14 +254,14 @@ Asimismo, se actualizará de acuerdo con la evolución de estos vocabularios y s
     
 
 
-    <!-- http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#extensionDePortal -->
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#hectometro -->
 
-    <owl:DatatypeProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#extensionDePortal">
+    <owl:DatatypeProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#hectometro">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/locn#locatorDesignator"/>
-        <dcterms:issued>2020-01-16</dcterms:issued>
-        <rdfs:comment xml:lang="es">Un locator designator específico para el caso de direcciones postales españolas, tal y como se describe en el documento D2.8.I.5 INSPIRE Data Specification on Addresses – Guidelines disponible en https://inspire.ec.europa.eu/documents/Data_Specifications/INSPIRE_DataSpecification_AD_v3.0.pdf, tabla B -  Synopsis of Locator Designator types and Postal descriptor used in addressing, páginas 85 y 86</rdfs:comment>
+        <dcterms:issued>2020-01-23</dcterms:issued>
+        <rdfs:comment xml:lang="es">Esta propiedad permite definir el hectómetro en el que se encuentra una dirección postal en caso de que sea relevante representarlo, siendo complementaria a la propiedad que permite representar el punto kilométrico. Es importante destacar que esta propiedad no aparece en el documento D2.8.I.5 INSPIRE Data Specification on Addresses – Guidelines disponible en https://inspire.ec.europa.eu/documents/Data_Specifications/INSPIRE_DataSpecification_AD_v3.0.pdf, tabla B -  Synopsis of Locator Designator types and Postal descriptor used in addressing, páginas 85 y 86, como el resto de propiedades definidas en este vocabulario como subpropiedades de locn:locatorDesignator y locn:locatorName</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal"/>
-        <rdfs:label xml:lang="es">extensión de portal</rdfs:label>
+        <rdfs:label xml:lang="es">hectómetro</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -274,30 +274,6 @@ Asimismo, se actualizará de acuerdo con la evolución de estos vocabularios y s
         <rdfs:comment xml:lang="es">Un locator name específico para el caso de direcciones postales españolas, tal y como se describe en el documento D2.8.I.5 INSPIRE Data Specification on Addresses – Guidelines disponible en https://inspire.ec.europa.eu/documents/Data_Specifications/INSPIRE_DataSpecification_AD_v3.0.pdf, tabla B -  Synopsis of Locator Designator types and Postal descriptor used in addressing, páginas 85 y 86</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal"/>
         <rdfs:label xml:lang="es">nombre del edificio</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#numeroDePolicia -->
-
-    <owl:DatatypeProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#numeroDePolicia">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/locn#locatorDesignator"/>
-        <dcterms:issued>2020-01-16</dcterms:issued>
-        <rdfs:comment xml:lang="es">Un locator designator específico para el caso de direcciones postales españolas, tal y como se describe en el documento D2.8.I.5 INSPIRE Data Specification on Addresses – Guidelines disponible en https://inspire.ec.europa.eu/documents/Data_Specifications/INSPIRE_DataSpecification_AD_v3.0.pdf, tabla B -  Synopsis of Locator Designator types and Postal descriptor used in addressing, páginas 85 y 86</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal"/>
-        <rdfs:label xml:lang="es">número de policía</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#numeroDePortal -->
-
-    <owl:DatatypeProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#numeroDePortal">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/locn#locatorDesignator"/>
-        <dcterms:issued>2020-01-16</dcterms:issued>
-        <rdfs:comment xml:lang="es">Un locator designator específico para el caso de direcciones postales españolas, tal y como se describe en el documento D2.8.I.5 INSPIRE Data Specification on Addresses – Guidelines disponible en https://inspire.ec.europa.eu/documents/Data_Specifications/INSPIRE_DataSpecification_AD_v3.0.pdf, tabla B -  Synopsis of Locator Designator types and Postal descriptor used in addressing, páginas 85 y 86</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal"/>
-        <rdfs:label xml:lang="es">número de portal</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -621,10 +597,10 @@ Además de las propiedades asociadas a estas clases, y definidas en su correspon
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/locn"/>
     </owl:Class>
     <rdf:Description>
-        <rdfs:label>RDF</rdfs:label>
+        <rdfs:label>HTML</rdfs:label>
     </rdf:Description>
     <rdf:Description>
-        <rdfs:label>HTML</rdfs:label>
+        <rdfs:label>RDF</rdfs:label>
     </rdf:Description>
 </rdf:RDF>
 
