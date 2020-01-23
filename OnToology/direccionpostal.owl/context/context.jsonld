@@ -10,7 +10,7 @@
       "@id" : "http://www.w3.org/ns/locn#addressId"
     },
     "DireccionPostal" : {
-      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccionPostal#DireccionPostal"
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#DireccionPostal"
     },
     "license" : {
       "@id" : "http://creativecommons.org/ns#license"
@@ -31,6 +31,14 @@
       "@id" : "http://schema.org/addressRegion",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
+    "via" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#via",
+      "@type" : "@id"
+    },
+    "distrito" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#distrito",
+      "@type" : "@id"
+    },
     "hasAddress" : {
       "@id" : "http://www.w3.org/2006/vcard/ns#hasAddress",
       "@type" : "@id"
@@ -38,15 +46,27 @@
     "locatorName" : {
       "@id" : "http://www.w3.org/ns/locn#locatorName"
     },
+    "planta" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#planta"
+    },
     "label" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
     },
     "adminUnitL1" : {
       "@id" : "http://www.w3.org/ns/locn#adminUnitL1"
     },
+    "Municipio" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio"
+    },
     "postal-code" : {
       "@id" : "http://www.w3.org/2006/vcard/ns#postal-code",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Via" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via"
+    },
+    "entrada" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#entrada"
     },
     "creator" : {
       "@id" : "http://purl.org/dc/elements/1.1/creator"
@@ -55,12 +75,27 @@
       "@id" : "http://schema.org/postalCode",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
+    "topObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+      "@type" : "@id"
+    },
+    "tramo" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#tramo",
+      "@type" : "@id"
+    },
+    "barrio" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#barrio",
+      "@type" : "@id"
+    },
     "address" : {
       "@id" : "http://schema.org/address",
       "@type" : "@id"
     },
     "rights" : {
       "@id" : "http://purl.org/dc/elements/1.1/rights"
+    },
+    "Distrito" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito"
     },
     "PostalAddress" : {
       "@id" : "http://schema.org/PostalAddress"
@@ -72,8 +107,14 @@
     "identifier" : {
       "@id" : "http://purl.org/dc/elements/1.1/identifier"
     },
+    "hectometro" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#hectometro"
+    },
     "addressArea" : {
       "@id" : "http://www.w3.org/ns/locn#addressArea"
+    },
+    "puerta" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#puerta"
     },
     "isDefinedBy" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
@@ -82,15 +123,31 @@
       "@id" : "http://www.w3.org/2006/vcard/ns#locality",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
+    "puntoKilometrico" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#puntoKilometrico"
+    },
     "streetAddress" : {
       "@id" : "http://schema.org/streetAddress",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "portal" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#portal",
+      "@type" : "@id"
     },
     "title" : {
       "@id" : "http://purl.org/dc/elements/1.1/title"
     },
     "fullAddress" : {
       "@id" : "http://www.w3.org/ns/locn#fullAddress"
+    },
+    "Portal" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Portal"
+    },
+    "Tramo" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Tramo"
+    },
+    "nombreDelEdificio" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#nombreDelEdificio"
     },
     "postCode" : {
       "@id" : "http://www.w3.org/ns/locn#postCode"
@@ -99,8 +156,14 @@
       "@id" : "http://schema.org/addressLocality",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
+    "Barrio" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Barrio"
+    },
     "comment" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "escalera" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#escalera"
     },
     "street-address" : {
       "@id" : "http://www.w3.org/2006/vcard/ns#street-address",
@@ -121,6 +184,10 @@
     },
     "adminUnitL2" : {
       "@id" : "http://www.w3.org/ns/locn#adminUnitL2"
+    },
+    "municipio" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio",
+      "@type" : "@id"
     }
   }
 }

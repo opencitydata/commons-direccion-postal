@@ -1,12 +1,32 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1501"
-node [shape = rectangle, color="orange"]; "locn:Address" "vcard:Address" "schema:PostalAddress" ; /*classes style*/
-	"http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccionPostal" -> "esdir:" [ label = "vann:preferredNamespaceUri" ];
-	"http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccionPostal" -> "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccionPostal.owl" [ label = "dcterms:hasFormat" ];
-	"http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccionPostal" -> "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccionPostal_v0.2" [ label = "owl:versionIRI" ];
-	"http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccionPostal" -> "http://creativecommons.org/licenses/by/4.0/" [ label = "cc:license" ];
-	"http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccionPostal" -> "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccionPostal.html" [ label = "dcterms:hasFormat" ];
+node [shape = rectangle, color="orange"]; "locn:Address" "escjr:Tramo" "schema:PostalAddress" "esadm:Barrio" "esadm:Distrito" "vcard:Address" "esadm:Municipio" "escjr:Via" "escjr:Portal" ; /*classes style*/
+	"NULL" -> "escjr:tramo" [ label = "owl:onProperty" ];
+	"NULL" -> "esadm:barrio" [ label = "owl:onProperty" ];
+	"NULL" -> "esadm:Barrio" [ label = "owl:allValuesFrom" ];
+	"NULL" -> "esadm:municipio" [ label = "owl:onProperty" ];
+	"NULL" -> "esadm:Distrito" [ label = "owl:allValuesFrom" ];
+	"NULL" -> "escjr:via" [ label = "owl:onProperty" ];
+	"NULL" -> "escjr:Portal" [ label = "owl:allValuesFrom" ];
+	"NULL" -> "esadm:distrito" [ label = "owl:onProperty" ];
+	"NULL" -> "escjr:Tramo" [ label = "owl:allValuesFrom" ];
+	"NULL" -> "escjr:portal" [ label = "owl:onProperty" ];
+	"NULL" -> "escjr:Via" [ label = "owl:allValuesFrom" ];
+	"NULL" -> "esadm:Municipio" [ label = "owl:allValuesFrom" ];
+	"http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal" -> "http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal.owl" [ label = "dcterms:hasFormat" ];
+	"http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal" -> "http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal/0.3.1" [ label = "owl:versionIRI" ];
+	"http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal" -> "http://creativecommons.org/licenses/by/4.0/" [ label = "cc:license" ];
+	"http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal" -> "esdir:" [ label = "vann:preferredNamespaceUri" ];
+	"http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal" -> "http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal.html" [ label = "dcterms:hasFormat" ];
+	"esdir:hectometro" -> "locn:locatorDesignator" [ label = "rdfs:subPropertyOf" ];
+	"esdir:puntoKilometrico" -> "locn:locatorDesignator" [ label = "rdfs:subPropertyOf" ];
+	"esadm:distrito" -> "owl:topObjectProperty" [ label = "rdfs:subPropertyOf" ];
+	"esdir:planta" -> "locn:locatorDesignator" [ label = "rdfs:subPropertyOf" ];
+	"esdir:nombreDelEdificio" -> "locn:locatorName" [ label = "rdfs:subPropertyOf" ];
+	"esdir:puerta" -> "locn:locatorDesignator" [ label = "rdfs:subPropertyOf" ];
+	"esdir:entrada" -> "locn:locatorDesignator" [ label = "rdfs:subPropertyOf" ];
+	"esdir:escalera" -> "locn:locatorDesignator" [ label = "rdfs:subPropertyOf" ];
 	"locn:Address" -> "owl:Thing" [ label = "locn:locatorName" ];
 	"locn:Address" -> "owl:Thing" [ label = "locn:thoroughfare" ];
 	"locn:Address" -> "owl:Thing" [ label = "locn:postCode" ];
@@ -25,8 +45,8 @@ node [shape = rectangle, color="orange"]; "locn:Address" "vcard:Address" "schema
 	"locn:Address" -> "owl:Thing" [ label = "locn:adminUnitL2" ];
 	"owl:Thing" -> "schema:PostalAddress" [ label = "schema:address" ];
 	"schema:PostalAddress" -> "owl:Thing" [ label = "schema:addressCountry" ];
-	"owl:Thing" -> "locn:Address" [ label = "locn:address" ];
 	"owl:Thing" -> "xsd:string" [ label = "vcard:locality" ];
+	"owl:Thing" -> "locn:Address" [ label = "locn:address" ];
 	"locn:Address" -> "owl:Thing" [ label = "locn:fullAddress" ];
 	"owl:Thing" -> "xsd:string" [ label = "vcard:region" ];
 	"locn:Address" -> "owl:Thing" [ label = "locn:addressArea" ];

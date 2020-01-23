@@ -9,8 +9,8 @@ This section provides details for each class and property defined by Vocabulario
          </a>
       </li>
       <li>
-         <a href="#DireccionPostal"
-            title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccionPostal#DireccionPostal">Dirección postal</a>
+         <a href="#http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#DireccionPostal"
+            title="http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#DireccionPostal">Dirección postal</a>
       </li>
    </ul>
    <div class="entity" id="http://www.w3.org/ns/locn#Address">
@@ -32,8 +32,8 @@ This section provides details for each class and property defined by Vocabulario
       <dl class="description">
          <dt>has sub-classes</dt>
          <dd>
-            <a href="#DireccionPostal"
-               title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccionPostal#DireccionPostal">Dirección postal</a>
+            <a href="#http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#DireccionPostal"
+               title="http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#DireccionPostal">Dirección postal</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in domain of</dt>
@@ -58,16 +58,16 @@ This section provides details for each class and property defined by Vocabulario
          </dd>
       </dl>
    </div>
-   <div class="entity" id="DireccionPostal">
+   <div class="entity" id="http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#DireccionPostal">
       <h3>Dirección postal<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccionPostal#DireccionPostal</p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#DireccionPostal</p>
       <div class="comment">
          <span class="markdown">Una dirección postal en España. Se define como una especialización de las clases vcard:Address, schema:PostalAddress y locn:Address
-Además de las propiedades asociadas a estas clases, y definidas en su correspondiente vocabulario, también se pueden utilizar las definidas en los vocabularios de división administrativa española y en el callejero</span>
+Además de las propiedades asociadas a estas clases, y definidas en su correspondiente vocabulario, también se pueden utilizar las definidas en los vocabularios de división administrativa española (por ejemplo, barrio, distrito y municipio) y en el callejero (por ejemplo, via, tramo y portal), para lo cual se han añadido restricciones universales a esta clase, con el objetivo de dejar esta relación más explícita.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -78,15 +78,9 @@ Además de las propiedades asociadas a estas clases, y definidas en su correspon
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <span class="dotted" title="http://schema.org/PostalAddress">postal address</span>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dd>
             <span class="dotted" title="http://www.w3.org/2006/vcard/ns#Address">address</span>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dd>
-            <a href="#http://www.w3.org/ns/locn#Address" title="http://www.w3.org/ns/locn#Address">address</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#http://www.w3.org/ns/locn#Address" title="http://www.w3.org/ns/locn#Address">address</a>
+            <sup class="type-c" title="class">c</sup>, <span class="dotted" title="http://schema.org/PostalAddress">postal address</span>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -99,6 +93,12 @@ Además de las propiedades asociadas a estas clases, y definidas en su correspon
       </li>
       <li>
          <a href="#http://www.w3.org/ns/locn#address" title="http://www.w3.org/ns/locn#address">address</a>
+      </li>
+      <li>
+         <a href="#http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#distrito"
+            title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#distrito">
+            <span>distrito</span>
+         </a>
       </li>
       <li>
          <a href="#http://www.w3.org/2006/vcard/ns#hasAddress" title="http://www.w3.org/2006/vcard/ns#hasAddress">has address</a>
@@ -153,6 +153,22 @@ Además de las propiedades asociadas a estas clases, y definidas en su correspon
          </dl>
       </div>
    </div>
+   <div class="entity" id="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#distrito">
+      <h3>distrito<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#distrito</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#topObjectProperty">top object property</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="http://www.w3.org/2006/vcard/ns#hasAddress">
       <h3>has address<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -166,7 +182,7 @@ Además de las propiedades asociadas a estas clases, y definidas en su correspon
       <dl class="definedBy">
          <dt>Is defined by</dt>
          <dd>
-            <a href="http://www.w3.org/TR/vcard-rdf/">http://www.w3.org/TR/vcard-rdf/</a>
+            <a href="http://www.w3.org/2006/vcard/ns">http://www.w3.org/2006/vcard/ns</a>
          </dd>
       </dl>
       <div class="description">
@@ -217,9 +233,21 @@ Además de las propiedades asociadas a estas clases, y definidas en su correspon
          <a href="#http://schema.org/streetAddress" title="http://schema.org/streetAddress">dirección</a>
       </li>
       <li>
+         <a href="#http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#entrada"
+            title="http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#entrada">entrada</a>
+      </li>
+      <li>
+         <a href="#http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#escalera"
+            title="http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#escalera">escalera</a>
+      </li>
+      <li>
          <a href="#http://www.w3.org/ns/locn#fullAddress" title="http://www.w3.org/ns/locn#fullAddress">
             <span>full address</span>
          </a>
+      </li>
+      <li>
+         <a href="#http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#hectometro"
+            title="http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#hectometro">hectómetro</a>
       </li>
       <li>
          <a href="#http://schema.org/addressLocality" title="http://schema.org/addressLocality">localidad</a>
@@ -241,7 +269,15 @@ Además de las propiedades asociadas a estas clases, y definidas en su correspon
          <a href="#http://www.w3.org/2006/vcard/ns#street-address" title="http://www.w3.org/2006/vcard/ns#street-address">nombre de la vía</a>
       </li>
       <li>
+         <a href="#http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#nombreDelEdificio"
+            title="http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#nombreDelEdificio">nombre del edificio</a>
+      </li>
+      <li>
          <a href="#http://www.w3.org/2006/vcard/ns#country-name" title="http://www.w3.org/2006/vcard/ns#country-name">país</a>
+      </li>
+      <li>
+         <a href="#http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#planta"
+            title="http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#planta">planta</a>
       </li>
       <li>
          <a href="#http://www.w3.org/ns/locn#poBox" title="http://www.w3.org/ns/locn#poBox">
@@ -257,6 +293,14 @@ Además de las propiedades asociadas a estas clases, y definidas en su correspon
          <a href="#http://www.w3.org/ns/locn#postName" title="http://www.w3.org/ns/locn#postName">
             <span>post name</span>
          </a>
+      </li>
+      <li>
+         <a href="#http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#puerta"
+            title="http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#puerta">puerta</a>
+      </li>
+      <li>
+         <a href="#http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#puntoKilometrico"
+            title="http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#puntoKilometrico">punto kilométrico</a>
       </li>
       <li>
          <a href="#http://schema.org/addressRegion" title="http://schema.org/addressRegion">región</a>
@@ -477,6 +521,58 @@ Best practice is to use the ISO 3166-1 code but if this is inappropriate for the
          </dl>
       </div>
    </div>
+   <div class="entity" id="http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#entrada">
+      <h3>entrada<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#entrada</p>
+      <div class="comment">
+         <span class="markdown">Un locator designator específico para el caso de direcciones postales españolas, tal y como se describe en el documento D2.8.I.5 INSPIRE Data Specification on Addresses – Guidelines disponible en https://inspire.ec.europa.eu/documents/Data_Specifications/INSPIRE_DataSpecification_AD_v3.0.pdf, tabla B -  Synopsis of Locator Designator types and Postal descriptor used in addressing, páginas 85 y 86</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal">http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#http://www.w3.org/ns/locn#locatorDesignator" title="http://www.w3.org/ns/locn#locatorDesignator">locator designator</a>
+               <sup class="type-dp" title="data property">dp</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#escalera">
+      <h3>escalera<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#escalera</p>
+      <div class="comment">
+         <span class="markdown">Un locator designator específico para el caso de direcciones postales españolas, tal y como se describe en el documento D2.8.I.5 INSPIRE Data Specification on Addresses – Guidelines disponible en https://inspire.ec.europa.eu/documents/Data_Specifications/INSPIRE_DataSpecification_AD_v3.0.pdf, tabla B -  Synopsis of Locator Designator types and Postal descriptor used in addressing, páginas 85 y 86</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal">http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#http://www.w3.org/ns/locn#locatorDesignator" title="http://www.w3.org/ns/locn#locatorDesignator">locator designator</a>
+               <sup class="type-dp" title="data property">dp</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="http://www.w3.org/ns/locn#fullAddress">
       <h3>full address<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
@@ -499,6 +595,32 @@ Best practice is to use the ISO 3166-1 code but if this is inappropriate for the
             <dd>
                <a href="#http://www.w3.org/ns/locn#Address" title="http://www.w3.org/ns/locn#Address">address</a>
                <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#hectometro">
+      <h3>hectómetro<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#hectometro</p>
+      <div class="comment">
+         <span class="markdown">Esta propiedad permite definir el hectómetro en el que se encuentra una dirección postal en caso de que sea relevante representarlo, siendo complementaria a la propiedad que permite representar el punto kilométrico. Es importante destacar que esta propiedad no aparece en el documento D2.8.I.5 INSPIRE Data Specification on Addresses – Guidelines disponible en https://inspire.ec.europa.eu/documents/Data_Specifications/INSPIRE_DataSpecification_AD_v3.0.pdf, tabla B -  Synopsis of Locator Designator types and Postal descriptor used in addressing, páginas 85 y 86, como el resto de propiedades definidas en este vocabulario como subpropiedades de locn:locatorDesignator y locn:locatorName</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal">http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#http://www.w3.org/ns/locn#locatorDesignator" title="http://www.w3.org/ns/locn#locatorDesignator">locator designator</a>
+               <sup class="type-dp" title="data property">dp</sup>
             </dd>
          </dl>
       </div>
@@ -576,6 +698,22 @@ Best practice is to use the ISO 3166-1 code but if this is inappropriate for the
       </dl>
       <div class="description">
          <dl>
+            <dt>has sub-properties</dt>
+            <dd>
+               <a href="#http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#entrada"
+                  title="http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#entrada">entrada</a>
+               <sup class="type-dp" title="data property">dp</sup>, <a href="#http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#escalera"
+                  title="http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#escalera">escalera</a>
+               <sup class="type-dp" title="data property">dp</sup>, <a href="#http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#hectometro"
+                  title="http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#hectometro">hectómetro</a>
+               <sup class="type-dp" title="data property">dp</sup>, <a href="#http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#planta"
+                  title="http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#planta">planta</a>
+               <sup class="type-dp" title="data property">dp</sup>, <a href="#http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#puerta"
+                  title="http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#puerta">puerta</a>
+               <sup class="type-dp" title="data property">dp</sup>, <a href="#http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#puntoKilometrico"
+                  title="http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#puntoKilometrico">punto kilométrico</a>
+               <sup class="type-dp" title="data property">dp</sup>
+            </dd>
             <dt>has domain</dt>
             <dd>
                <a href="#http://www.w3.org/ns/locn#Address" title="http://www.w3.org/ns/locn#Address">address</a>
@@ -602,6 +740,12 @@ Best practice is to use the ISO 3166-1 code but if this is inappropriate for the
       </dl>
       <div class="description">
          <dl>
+            <dt>has sub-properties</dt>
+            <dd>
+               <a href="#http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#nombreDelEdificio"
+                  title="http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#nombreDelEdificio">nombre del edificio</a>
+               <sup class="type-dp" title="data property">dp</sup>
+            </dd>
             <dt>has domain</dt>
             <dd>
                <a href="#http://www.w3.org/ns/locn#Address" title="http://www.w3.org/ns/locn#Address">address</a>
@@ -635,6 +779,32 @@ Best practice is to use the ISO 3166-1 code but if this is inappropriate for the
          </dl>
       </div>
    </div>
+   <div class="entity" id="http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#nombreDelEdificio">
+      <h3>nombre del edificio<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#nombreDelEdificio</p>
+      <div class="comment">
+         <span class="markdown">Un locator name específico para el caso de direcciones postales españolas, tal y como se describe en el documento D2.8.I.5 INSPIRE Data Specification on Addresses – Guidelines disponible en https://inspire.ec.europa.eu/documents/Data_Specifications/INSPIRE_DataSpecification_AD_v3.0.pdf, tabla B -  Synopsis of Locator Designator types and Postal descriptor used in addressing, páginas 85 y 86</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal">http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#http://www.w3.org/ns/locn#locatorName" title="http://www.w3.org/ns/locn#locatorName">locator name</a>
+               <sup class="type-dp" title="data property">dp</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="http://www.w3.org/2006/vcard/ns#country-name">
       <h3>país<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
@@ -656,6 +826,32 @@ Best practice is to use the ISO 3166-1 code but if this is inappropriate for the
             <dt>has range</dt>
             <dd>
                <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#planta">
+      <h3>planta<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#planta</p>
+      <div class="comment">
+         <span class="markdown">Un locator designator específico para el caso de direcciones postales españolas, tal y como se describe en el documento D2.8.I.5 INSPIRE Data Specification on Addresses – Guidelines disponible en https://inspire.ec.europa.eu/documents/Data_Specifications/INSPIRE_DataSpecification_AD_v3.0.pdf, tabla B -  Synopsis of Locator Designator types and Postal descriptor used in addressing, páginas 85 y 86</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal">http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#http://www.w3.org/ns/locn#locatorDesignator" title="http://www.w3.org/ns/locn#locatorDesignator">locator designator</a>
+               <sup class="type-dp" title="data property">dp</sup>
             </dd>
          </dl>
       </div>
@@ -734,6 +930,58 @@ Best practice is to use the ISO 3166-1 code but if this is inappropriate for the
             <dd>
                <a href="#http://www.w3.org/ns/locn#Address" title="http://www.w3.org/ns/locn#Address">address</a>
                <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#puerta">
+      <h3>puerta<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#puerta</p>
+      <div class="comment">
+         <span class="markdown">Un locator designator específico para el caso de direcciones postales españolas, tal y como se describe en el documento D2.8.I.5 INSPIRE Data Specification on Addresses – Guidelines disponible en https://inspire.ec.europa.eu/documents/Data_Specifications/INSPIRE_DataSpecification_AD_v3.0.pdf, tabla B -  Synopsis of Locator Designator types and Postal descriptor used in addressing, páginas 85 y 86</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal">http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#http://www.w3.org/ns/locn#locatorDesignator" title="http://www.w3.org/ns/locn#locatorDesignator">locator designator</a>
+               <sup class="type-dp" title="data property">dp</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#puntoKilometrico">
+      <h3>punto kilométrico<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal#puntoKilometrico</p>
+      <div class="comment">
+         <span class="markdown">Un locator designator específico para el caso de direcciones postales españolas, tal y como se describe en el documento D2.8.I.5 INSPIRE Data Specification on Addresses – Guidelines disponible en https://inspire.ec.europa.eu/documents/Data_Specifications/INSPIRE_DataSpecification_AD_v3.0.pdf, tabla B -  Synopsis of Locator Designator types and Postal descriptor used in addressing, páginas 85 y 86</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal">http://vocab.linkeddata.es/datosabiertos/def/commons/direccion-postal</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#http://www.w3.org/ns/locn#locatorDesignator" title="http://www.w3.org/ns/locn#locatorDesignator">locator designator</a>
+               <sup class="type-dp" title="data property">dp</sup>
             </dd>
          </dl>
       </div>
